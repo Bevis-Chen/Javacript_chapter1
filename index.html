@@ -10,89 +10,24 @@
 </head>
 
 <body>
-    <H1>javasript</H1>
+    <h1>javasript</h1>
+    <h2>本期大樂透</h2>
+
+    <ul>
+        <h3>
+            <li>開獎中....</li>
+        </h3>
+    </ul>
+
+    <button id="start">開始</button>
 
 
-    <script>
-        let x = "20";
-        // let y = prompt("輸入值: ");
-        let radius = 10;
-        const PI = 3.1415926;
-        /*
-        
-        console.log(x - y);
-        console.log(radius * radius * PI);
-        console.log(typeof (PI));
-        let s = "HI SIRI"
-        console.log(s * x)
-        document.write(typeof (x))
-        document.write("<h2>", s, "</h2>")
-        let email = "Austin@gmail.com";
-        console.log(email);
-        console.log(email.length);
-        console.log(email.toUpperCase());
-        console.log(email.toLowerCase())
-        console.log(email.indexOf("g"))
-        console.log(email.substring(0, 8))
-        console.log(email.replace("Austin", "Bevis"));
-        console.log(email.includes("@"));
-        for (let i = 0; i < email.length; i++) {
-            document.write(email[i])
-            console.log()
-        }
-        x = 10;
-        y = 20;
-        z = 30;
-        console.log(++x, y++);
-        console.log(x, y);
-        console.log(25 == "25");
-        console.log("25" == 25);
-        console.log(25 === "25");
-        console.log("25" === 25);
-        let result = "100";
-        console.log(Number(result), typeof (result));
-        console.log(Boolean(-200));
-        if (!(x > y) || x < z) {
-            console.log("2");
-        }
-        console.log(Math);
-        console.log(PI);
-        x = -7.7;
-        console.log(x);
-        console.log(Math.abs(x));
-        console.log(Math.ceil(x));
-        console.log(Math.floor(x));
-        console.log(Math.round(x));
-        // Math.random(): 取得 0~1 之間浮點數
-        console.log(Math.random());
-        console.log(Math.random() * 10);
-        console.log(Math.floor(Math.random() * 10));
-        console.log(Math.floor(Math.random() * 10) + 1);
-        console.log(Math.floor(Math.random() * (100 - 10 + 1)) + 10);
 
-        while (true) {
-            let number = Math.floor(Math.random() * (100 - 10 + 1)) + 10;
-            if (number == 100) {
-                console.log("break");
-                break;
-            }
-        }
-        */
-        const start = 1;
-        const end = 49;
 
-        for (let i = 0; i < 10; i++) {
-            let lotto = "";
-            for (let i = 0; i < 6; i++) {
-                // console.log(`第${i + 1}個號碼為:${(Math.floor(Math.random() * (end - start + 1)) + start)}`);
-                lotto = lotto + String(Math.floor(Math.random() * (end - start + 1)) + start) + " ";
-            }
-            console.log(lotto)
-            document.write(`<h4 style= "color: red; background-color: blue;">${lotto}</h4> `)
 
-        }
 
-    </script>
+
+    <script src="./js/index.js"> </script>
 </body>
 
 </html>
